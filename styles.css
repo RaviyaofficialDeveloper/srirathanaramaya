@@ -1,0 +1,112 @@
+/* Body */
+body {
+  font-family: 'Noto Sans Sinhala', sans-serif;
+  background-color: #ca5b23;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #ca5b23, #ccb626);
+  color: rgb(255, 255, 255);
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Navbar */
+nav {
+  background-color: #0a0a01;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 12px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Nav links */
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  font-size: 1rem;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 4px;
+}
+
+.nav-link:hover {
+  background-color: #8bc34a;
+  color: #33691E;
+}
+
+.nav-link.active {
+  background-color: #aed581;
+  color: #33691E;
+}
+
+/* Section Content */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+  background: rgb(175, 210, 182);
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Section Headings */
+h2 {
+  color: #691e1e;
+  border-bottom: 3px solid #0b1105;
+  padding-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #000000;
+  color: rgb(255, 253, 253);
+  text-align: center;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+/* Optional Logo Image Style */
+img.logo {
+  max-width: 150px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Anchor tag default styles */
+a {
+  color: #558B2F;
+}
+
+a:hover {
+  color: #33691E;
+  text-decoration: underline;
+}
